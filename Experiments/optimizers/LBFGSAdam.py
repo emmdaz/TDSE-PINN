@@ -1,4 +1,5 @@
 from torch.optim.optimizer import Optimizer
+import torch
 
 class LBFGSAdam(Optimizer):
     def __init__(self, params, lr=1e-5, betas=(0.9, 0.999), eps=1e-8, history_size=10, max_grad_norm=1.0):
