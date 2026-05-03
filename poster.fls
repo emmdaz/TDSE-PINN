@@ -448,11 +448,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT ./fcfm-w.png
 INPUT ./BUAP-w.png
 INPUT ./fcfm-w.png
-INPUT ./images/figure1.tex
-INPUT ./images/figure2.tex
-INPUT ./images/image2.PNG
-INPUT ./images/image2.PNG
-INPUT ./tables/table1.tex
 INPUT ./poster.bbl
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr17.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr17.tfm
@@ -473,8 +468,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT ./images/figure3.tex
-INPUT ./images/portfolio.png
-INPUT ./images/portfolio.png
+INPUT ./images/QR.png
+INPUT ./images/QR.png
 INPUT ./BUAP-w.png
 INPUT ./fcfm-w.png
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map

@@ -1,13 +1,18 @@
 \begin{thebibliography}{1}
 
-\bibitem{li-1984}
-Bin Li, J~Friedman, R~Olshen, and C~Stone.
-\newblock Classification and regression trees (cart).
-\newblock {\em Biometrics}, 40(3):358--361, 1984.
+\bibitem{NL}
+Ali Behrouz, Meisam Razaviyayn, Peilin Zhong, and Vahab Mirrokni.
+\newblock Nested learning: The illusion of deep learning architecture.
+\newblock Technical report, Google Research, 2025.
 
-\bibitem{WHO-2018}
-{World Health Organization}.
-\newblock {Global Status Report on Road}.
-\newblock Technical report, W.H.O, 2018.
+\bibitem{Raissi2019}
+M.~Raissi, P.~Perdikaris, and G.~E. Karniadakis.
+\newblock Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations.
+\newblock {\em Journal of Computational Physics}, 378:686--707, 2 2019.
+
+\bibitem{Zhang2026}
+Zhao Zhang, Gonglin Yuan, Zhenkai Qin, and Qining Luo.
+\newblock An improvement by introducing lbfgs idea into the adam optimizer for machine learning.
+\newblock {\em Expert Systems with Applications}, 296, 1 2026.
 
 \end{thebibliography}

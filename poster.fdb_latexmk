@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex poster"] 1777800524.11836 "poster.aux" "poster.bbl" "poster" 1777801985.72524 0
-  "./poster.bib" 1777820096 462 019dd0a59af9f5e4a203dad68b888e9d ""
+["bibtex poster"] 1777804474.32819 "poster.aux" "poster.bbl" "poster" 1777808336.44588 0
+  "./poster.bib" 1777802859.88293 5840 701d81be1d6b2e5e24c22198f061f2bb ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "poster.aux" 1777801985.34253 1277 7981dee68b3aa593cc7727116351e0fc "lualatex"
+  "poster.aux" 1777808335.80199 952 3da595ab0998a90e9298f0039d78b867 "lualatex"
   (generated)
   "poster.bbl"
   "poster.blg"
   (rewritten before read)
-["lualatex"] 1777801982.65779 "/home/emmamalona/CNF2026/poster.tex" "poster.pdf" "poster" 1777801985.72547 0
+["lualatex"] 1777808331.5574 "/home/emmamalona/CNF2026/poster.tex" "poster.pdf" "poster" 1777808336.44611 0
   "/home/emmamalona/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lato-bol.luc" 1777798904.64065 1525254 d86f434fef69877dad88a8864cc4f501 ""
   "/home/emmamalona/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lato-bolita.luc" 1777798903.17664 1554206 e55f81c1a9e726c6196568f9bb9681e4 ""
   "/home/emmamalona/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lato-italic.luc" 1777798911.88275 1580281 5e18de6a8d6bd844f7b3247c54e926e2 ""
@@ -26,7 +26,7 @@
   "/home/emmamalona/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/raleway-regular.luc" 1777798899.88559 250419 ca7298a45e66465a79db8162fee52e13 ""
   "/home/emmamalona/.texlive2023/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1777800808.87594 4508 1fb514dcc09042e55293053235197c7b ""
   "/home/emmamalona/.texlive2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1777798898.78158 403508 cf209b353ed207e61d632888ad2b8734 ""
-  "/home/emmamalona/CNF2026/poster.tex" 1777801982.43033 11139 3a62f50e8ba5e92536c05619c733f43b ""
+  "/home/emmamalona/CNF2026/poster.tex" 1777808329.95985 5004 b5b724dd2556d10728b504b85e4fbf1e ""
   "/usr/share/texlive/texmf-dist/fonts/opentype/impallari/raleway/Raleway-Bold.otf" 1407086865 104164 14b7c1bcf2c29994177a6cf635f33935 ""
   "/usr/share/texlive/texmf-dist/fonts/opentype/impallari/raleway/Raleway-Regular.otf" 1407086865 101096 ef75bfbbdcde76cb5dd15d6144d090b6 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -41,7 +41,6 @@
   "/usr/share/texlive/texmf-dist/fonts/truetype/public/lato/Lato-Bol.ttf" 1438879318 657188 eb9532033c2adf99b1314611b5e9cd0e ""
   "/usr/share/texlive/texmf-dist/fonts/truetype/typoland/lato/Lato-Light.ttf" 1438879319 644556 90e1d3559ac52f7f0f77a86e1bfd632d ""
   "/usr/share/texlive/texmf-dist/fonts/truetype/typoland/lato/Lato-LightItalic.ttf" 1438879319 658212 7e9668b13f86893fb0a4a6e35965c107 ""
-  "/usr/share/texlive/texmf-dist/fonts/truetype/typoland/lato/Lato-Regular.ttf" 1438879319 657212 3b9b99039cc0a98dd50c3cbfac57ccb2 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -384,17 +383,13 @@
   "beamercolorthemenott.sty" 1777820096 1653 c183a520b5913bc0ffbb7660900c33f7 ""
   "beamerthemegemini.sty" 1777820096 6726 3b1744dffda098b55e3ae32b8d66ec7a ""
   "fcfm-w.png" 1777800232.50716 3723 e0a85d1e5ddc1fdd81de074404931754 ""
-  "images/figure1.tex" 1777820096 3774 b5f8ed2964f67f719950041ec582938e ""
-  "images/figure2.tex" 1777820096 180 c46538f907a89c2bac9e29d00d2fd8a7 ""
-  "images/figure3.tex" 1777820096 166 9dfa84a0dbf04646e0347a5270560cb9 ""
-  "images/image2.PNG" 1777820096 492973 bc2869a85a66bf1bed9ce24c80d24d3b ""
-  "images/portfolio.png" 1777820096 49184 8cc497739466918aa436953cfbda2e2c ""
-  "poster.aux" 1777801985.34253 1277 7981dee68b3aa593cc7727116351e0fc "lualatex"
-  "poster.bbl" 1777800524.18826 348 38fc454bc6e80f175ce690d51646e505 "bibtex poster"
-  "poster.nav" 1777801985.34326 307 9e520c26371a1250ff9fc1fe87f9c655 "lualatex"
-  "poster.out" 1777801984.30337 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
-  "poster.tex" 1777801982.43033 11139 3a62f50e8ba5e92536c05619c733f43b ""
-  "tables/table1.tex" 1777820096 438 3cc28953b533042693bd343e76a49620 ""
+  "images/QR.png" 1777804338.31898 58289 3ee6c4f8dae64a7405b9ae1ddfea8389 ""
+  "images/figure3.tex" 1777804229.93632 159 7f9930382826035aa4d02b650a3f7146 ""
+  "poster.aux" 1777808335.80199 952 3da595ab0998a90e9298f0039d78b867 "lualatex"
+  "poster.bbl" 1777804474.39858 794 7534834c47e1242790a1f4523389aab8 "bibtex poster"
+  "poster.nav" 1777808335.80275 307 9e520c26371a1250ff9fc1fe87f9c655 "lualatex"
+  "poster.out" 1777808334.9697 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "poster.tex" 1777808329.95985 5004 b5b724dd2556d10728b504b85e4fbf1e ""
   (generated)
   "poster.aux"
   "poster.log"
