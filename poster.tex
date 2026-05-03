@@ -1,0 +1,273 @@
+\documentclass[final]{beamer}
+
+% ====================
+% Packages
+% ====================
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[orientation=portrait,size=a0,scale=1.0]{beamerposter}
+\usetheme{gemini}
+\usecolortheme{nott}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\usepackage{anyfontsize}
+\usepackage{xcolor}
+\usepackage[skip=2pt,font=normalsize]{subcaption}
+\usepackage{adjustbox}
+
+% ----------------------------------
+% For plotting study methodology
+% ----------------------------------
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+% Defining Tickz Style
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, text width = 10cm, draw=black, fill=white]
+
+% \tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, text width = 4.5cm, draw=black, fill=blue!30]
+
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, text width = 6cm, draw=black, fill=white, text width = 10cm]
+
+% \tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+
+\tikzstyle{arrow} = [ultra thick,->,>=stealth]
+
+
+% ====================
+% Lengths
+% ====================
+
+% If you have N columns, choose \sepwidth and \colwidth such that
+% (N+1)*\sepwidth + N*\colwidth = \paperwidth
+\newlength{\sepwidth}
+\newlength{\colwidth}
+\setlength{\sepwidth}{0.025\paperwidth}
+\setlength{\colwidth}{0.45\paperwidth}
+
+\newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+
+% ====================
+% Title
+% ====================
+
+\title{Exploring new tendencies in numerical optimization applied to PINNs. An example with the nonlinear time-dependent Schrödinger's Equation.}
+
+\author{Cruz, Díaz Emmanuel \inst{1} \and Velazquez, Castro Jorge \inst{2}}
+
+\institute[shortinst]{\inst{1,}\inst{2} Facultad de Ciencias Físico Matemáticas, Benemérita Universidad Autónoma de Puebla \samelineand}
+
+% ====================
+% Footer (optional)
+% ====================
+
+%\footercontent{
+  %\href{https://www.lipsum.com}{\textbf{https://www.lipsum.com}} \hfill
+  %\textbf{Ph.D. Connect Conclave 2023} \hfill
+  %\href{mailto:your.email@provider.com}{\textbf{your.email@provider.com}}}
+% (can be left out to remove footer)
+
+
+% ====================
+% Logo (optional)
+% ====================
+
+% use this to include logos on the left and/or right side of the header:
+\logoright{\includegraphics[height=6.3cm]{fcfm-w.png}}
+\logoleft{\includegraphics[height=7cm]{BUAP-w.png}}
+
+% ====================
+% Body
+% ====================
+
+\begin{document}
+
+\begin{frame}[t]
+\begin{columns}[t]
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+% ----------------------------------
+% Abstract
+% ----------------------------------
+  \begin{block}{Abstract}
+    Recientemente las \textit{Physics Informed Neural Networks (PINN)} han surgido como una alternativa muy poderosa
+    para la resolución de problemas numéricos directos e inversos. Empero, el estado del arte del diseño de las PINNs se ha visto
+    estancado en el uso de optimizadores como Adam o SGD junto con optimizadores quasi-Newtonianos como el LBFGS. Este trabajo
+    explora las nuevas tendencias en optimización numérica, típicamente empleadas en modelos largos de lenguaje (LLM) y una 
+    propuesta de optimizador LBFGSAdam que aprovecha lo mejor de ambos optimizadores. El problema atacado para explorar estas nuevas
+    tendencias en optimización es la ecuación de Schrödinger no lineal dependiente del tiempo. Los resultados muestran que estas nuevas
+    alternativas para optimizar la función de costo de las PINNs son favorables y que estos optimizadores permiten obtener una mayor precisión
+    que el estado de arte actual de las PINNs, muy a pesar de que su diseño no haya sido precisamente enfocado para este propósito.     
+  \end{block}
+  
+% ----------------------------------
+% Section: Literature review
+% ----------------------------------
+  \begin{block}{Literature review}
+
+    Maecenas eget nunc suscipit, luctus nisl non, tristique felis. Praesent blandit faucibus quam, et tincidunt mauris sagittis eget. Nam lectus ante, ullamcorper luctus pulvinar a, rhoncus vitae mauris. Sed bibendum sapien in dolor dapibus, id iaculis turpis tristique \cite{li-1984}. Proin sit amet velit blandit, pretium lectus iaculis, vulputate nibh. Fusce vel fringilla lectus. Maecenas at orci felis. Duis fringilla diam ligula, a dapibus leo lobortis mollis. Maecenas tellus diam, placerat sit amet nisl at, dapibus imperdiet arcu. Phasellus vel pharetra mi. Quisque malesuada porta mi. Ut lacinia erat nec auctor tincidunt. Integer quis mattis dolor. Cras suscipit vitae lectus ut dignissim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin et lectus sed lorem rhoncus luctus \cite{WHO-2018}.
+
+    \heading{Research gaps}
+    Pellentesque eget convallis lorem, vel vestibulum nisl. Vivamus suscipit augue at ipsum commodo semper. Duis hendrerit, metus non scelerisque ultricies, libero dolor malesuada diam, fermentum scelerisque augue justo a erat. Donec arcu mi, tempor id pharetra ut, ultrices eu tortor. Vivamus in elit mauris. Ut vitae tellus tristique, tincidunt turpis sed, lobortis eros. Fusce malesuada vel turpis non mollis. Curabitur eleifend velit sagittis turpis vehicula auctor.
+
+  \end{block}
+
+% ----------------------------------
+% Section: Research objectives
+% ----------------------------------
+  \begin{alertblock}{Research objectives}
+
+    The present study investigates the following objectives:
+
+    \begin{itemize}
+      \item \textbf{Objective 1:} Pellentesque eget convallis lorem, vel vestibulum nisl.
+      
+      \item \textbf{Objective 2:} Curabitur eleifend velit sagittis turpis vehicula auctor.
+    \end{itemize}
+
+  \end{alertblock}
+
+% ----------------------------------
+% Section: Study methodology
+% ----------------------------------
+ \begin{block}{Study methodology}
+    The present study adopted the following step-by-step methodology to achieve the research objectives.
+ 
+    \input{images/figure1}
+
+ \end{block}
+
+% -------------------------------
+% Section: Site selection and data collection
+% -------------------------------
+\begin{block}{Site selection and data collection}
+    Sed et augue accumsan nibh ullamcorper accumsan. Nam dictum urna tortor, ut pretium leo eleifend efficitur. Mauris pretium, elit non posuere rhoncus, tortor enim dapibus lacus, a vehicula orci diam sit amet urna. In hac habitasse platea dictumst. Cras ut fermentum nunc, id interdum ex. Donec tincidunt metus nulla, a interdum ante efficitur cursus.  
+
+    Sed et augue accumsan nibh ullamcorper accumsan. Nam dictum urna tortor, ut pretium leo eleifend efficitur. Mauris pretium, elit non posuere rhoncus, tortor enim dapibus lacus, a vehicula orci diam sit amet urna. In hac habitasse platea dictumst. Cras ut fermentum nunc, id interdum ex. Donec tincidunt metus nulla, a interdum ante efficitur cursus.
+    
+\end{block}
+
+% -------------------------------
+% Section: Descriptive Statistics
+% -------------------------------
+
+\begin{block}{Descriptive statistics}
+    \begin{itemize}
+        \item Sed et augue accumsan nibh 45\% ullamcorper accumsan.
+        \item Sed et augue accumsan nibh ullamcorper accumsan. Nam dictum urna tortor, ut pretium leo eleifend efficitur. 
+        \item Nullam at velit facilisis nibh vulputate porta a sit amet metus.
+        \item Maecenas eget nunc suscipit, luctus nisl non, tristique felis.
+        \item Maecenas tellus diam, placerat sit amet nisl at, dapibus imperdiet arcu.
+    \end{itemize} 
+\end{block}
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+% -------------------------------
+% Section: Results and discussion
+% -------------------------------
+
+\begin{block}{Results and discussion}
+    \heading{Model estimates}
+    Pellentesque eget convallis lorem, vel vestibulum nisl. Vivamus suscipit augue at ipsum commodo semper. Duis hendrerit, metus non scelerisque ultricies, libero dolor malesuada diam, fermentum scelerisque augue justo a erat.
+
+    \input{images/figure2}
+
+    Cras ut fermentum nunc, id interdum ex. Donec tincidunt metus nulla, a interdum ante efficitur cursus. Proin justo mauris, imperdiet vel efficitur ac, lobortis et neque. Etiam ac iaculis libero.
+
+    \input{tables/table1}
+
+\end{block}
+
+% -------------------------------
+% Section: Conclusions
+% -------------------------------
+   \begin{block}{Conclusions}
+    \begin{itemize}
+      \item Sed et augue accumsan nibh ullamcorper accumsanam dictum urna tortor, ut pretium leo eleifend.  
+      \item Donec suscipit, urna quis tempus consectetur, quam est placerat ante, et scelerisque metus velit. 
+      \item Nam dictum urna tortor, ut pretium leo eleifend efficitur.
+      \item Praesent blandit faucibus quam, et tincidunt mauris sagittis eget 2.2\%.
+      \item Dolor sit amet, consectetur adipiscing elit. Mauris in nulla ultricies suscipit.
+    \end{itemize}
+  \end{block}
+
+
+% -------------------------------
+% Section: What is already known about this subject?
+% -------------------------------
+  \begin{exampleblock}{What is already known about this subject?}
+
+    \begin{itemize}
+      \item \textbf{Lorem ipsum dolor sit amet}, consectetur adipiscing elit. Mauris in nulla ac leo ultricies suscipit.
+      \item The \textbf{Duis vestibulum augue} in leo placerat, sit amet pharetra mi elementum.
+      \item \textbf{Fusce sit amet} velit pulvinar, feugiat velit sit amet, tristique dolor.
+    \end{itemize}
+
+  \end{exampleblock}
+
+  
+% -------------------------------
+% Section: What does this study add?
+% -------------------------------
+  \begin{exampleblock}{What does this study add?}
+    \begin{itemize}
+      \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in nulla ac leo ultricies suscipit.
+      \item The Duis vestibulum augue in leo placerat, sit amet pharetra mi elementum.
+      \item Fusce sit amet velit pulvinar, feugiat velit sit amet, tristique dolor.
+    \end{itemize}
+
+  \end{exampleblock}
+
+
+% -------------------------------
+% Section: Practical Implications
+% -------------------------------
+  \begin{exampleblock}{Practical implications}
+    \begin{itemize}
+      \item Ipsum dolor sit amet, consectetur adipiscing elit. Mauris in nulla ultricies suscipit.
+      \item Duis augue in leo placerat, sit amet pharetra mi elementum.
+      \item Sit amet pulvinar, feugiat velit sit amet, tristique dolor.
+    \end{itemize}
+
+  \end{exampleblock}
+
+% -------------------------------
+% Section: References
+% ------------------------------- 
+
+  \begin{block}{References}
+
+    \nocite{*}
+    \footnotesize{\bibliographystyle{plain}\bibliography{poster}}
+
+  \end{block}
+
+% -------------------------------
+% Section: Portfolio
+% -------------------------------
+  \begin{block}{Author$^{1}$ Portfolio Website}
+    
+    \input{images/figure3}
+
+  \end{block}
+
+\end{column}
+\separatorcolumn
+
+
+
+\end{columns}
+\end{frame}
+
+\end{document}
