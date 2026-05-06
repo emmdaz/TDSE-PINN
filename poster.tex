@@ -111,11 +111,43 @@
 % ----------------------------------
   \begin{block}{Physics Informed Neural Networks}
 
-    Las redes neuronales informadas de la física (PINN) fueron introducidas por primera vez por M. Raissi et al. en \cite{Raissi2019}. 
-    Resultaron como una propuesta para 
+    Las redes neuronales informadas de la física (PINN) resultaron como una propuesta para la resolución de problemas directos e 
+    inversos que involucran ecuaciones diferenciales ordinarias o parciales lineales o no lineales. Este método aprovecha que las 
+    redes neuronales profundas son aproximadoras universales de funciones \cite{uniann} y la diferenciación automática con la que estas
+    funcionan, diferenciando a la red respecto a sus entradas y sus parámetros. Las PINNs permiten además aplicar constricciones
+    al modelo de manera que la solución respete cualquier simetría, invariancia o principios de conservación que se origine de cualquier ley de la 
+    física que gobierne al problema en cuestión, dado que el mismo esté modelado por alguna ecuación diferencial parcial dependiente
+    o no dependiente del tiempo \cite{Raissi2019}.
+
+    Una tarea de modelado busca entender el comportamiento de un sistema desde una perspectiva científica y obtener caraterísticas
+    que describan al sistema de forma general. Así, en el caso de las PINNs, existen dos tipos principales de problemas: Directos e 
+    inversos. 
+
+    Los problemas directos son aquellos cuya solución da una relación entre los parámetros utilizados para describir el modelo $x$
 
     \heading{Research gaps}
     si
+  \end{block}
+
+  \begin{block}{Muon}
+    El optimizador muon es un optimizador especialmente diseñado para capas ocultas de redes neuronales lineales
+    introducido por primera vez por 
+  \end{block}
+
+  \begin{block}{LBFGSAdam}
+    Este optimzador fue diseñado por 
+    \heading{LBFGS}
+    El optimizador Limited-memory BFGS es un algoritmo de optimización quasi-Newtoniano que 
+
+  \end{block}
+
+  \begin{block}{Multi-scale Momentum Muon M3}
+    El optimizador M3 es resultado de los últimos trabajos del equipo de Google Research como una propuesta
+    para aplicar su nuevo paradigma de aprendizaje de máquina, memoria continua y Nested Learning. 
+  \end{block}
+
+  \begin{block}{Ecuación de Schrödinger no lineal}
+    
   \end{block}
 
 

@@ -5,6 +5,30 @@ Ali Behrouz, Meisam Razaviyayn, Peilin Zhong, and Vahab Mirrokni.
 \newblock Nested learning: The illusion of deep learning architecture.
 \newblock Technical report, Google Research, 2025.
 
+\bibitem{invp}
+Saverio Cambioni, Erik Asphaug, and Roberto Furfaro.
+\newblock Combining machine-learned regression models with bayesian inference to interpret remote sensing data.
+\newblock {\em Machine Learning for Planetary Science}, pages 193--207, 1 2022.
+
+\bibitem{directp}
+Wojciech Deȩbski.
+\newblock Probabilistic inverse theory.
+\newblock {\em Advances in Geophysics}, 52:1--102, 1 2010.
+
+\bibitem{uniann}
+Kurt Hornik, Maxwell Stinchcombe, and Halbert White.
+\newblock Multilayer feedforward networks are universal approximators.
+\newblock {\em Neural Networks}, 2:359--366, 1 1989.
+
+\bibitem{jordanmuon}
+Keller Jordan, Yuchen Jin, Vlado Boza, Jiacheng You, Franz Cesista, Laker Newhouse, and Jeremy Bernstein.
+\newblock Muon: An optimizer for hidden layers in neural networks, 2024.
+
+\bibitem{Muon1}
+Jingyuan Liu, Jianlin Su, Xingcheng Yao, Zhejun Jiang, Guokun Lai, Yulun Du, Yidao Qin, Weixin Xu, Enzhe Lu, Junjie Yan, Yanru Chen, Huabin Zheng, Yibo Liu, Shaowei Liu, Bohong Yin, Weiran He, Han Zhu, Yuzhi Wang, Jianzhou Wang, Mengnan Dong, Zheng Zhang, Yongsheng Kang, Hao Zhang, Xinran Xu, Yutao Zhang, Yuxin Wu, Xinyu Zhou, and Zhilin Yang.
+\newblock Muon is scalable for llm training.
+\newblock Technical report, 2 2025.
+
 \bibitem{Raissi2019}
 M.~Raissi, P.~Perdikaris, and G.~E. Karniadakis.
 \newblock Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations.

@@ -1,46 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: poster.aux
 The style file: plain.bst
 Database file #1: poster.bib
-You've used 3 entries,
+Warning--empty institution in Muon1
+You've used 8 entries,
             2118 wiz_defined-function locations,
-            519 strings with 4633 characters,
-and the built_in function-call counts, 975 in all, are:
-= -- 90
-> -- 64
-< -- 0
-+ -- 26
-- -- 22
-* -- 75
-:= -- 185
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 21
+            548 strings with 5735 characters,
+and the built_in function-call counts, 3468 in all, are:
+= -- 302
+> -- 288
+< -- 1
++ -- 115
+- -- 106
+* -- 302
+:= -- 626
+add.period$ -- 23
+call.type$ -- 8
+change.case$ -- 79
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 29
-empty$ -- 59
-format.name$ -- 22
-if$ -- 188
+cite$ -- 9
+duplicate$ -- 86
+empty$ -- 178
+format.name$ -- 106
+if$ -- 668
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 2
-newline$ -- 18
-num.names$ -- 6
-pop$ -- 15
+int.to.str$ -- 8
+missing$ -- 5
+newline$ -- 42
+num.names$ -- 16
+pop$ -- 73
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 69
 quote$ -- 0
-skip$ -- 20
+skip$ -- 66
 stack$ -- 0
-substring$ -- 37
-swap$ -- 2
-text.length$ -- 0
+substring$ -- 126
+swap$ -- 15
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
-warning$ -- 0
-while$ -- 7
-width$ -- 4
-write$ -- 35
+type$ -- 32
+warning$ -- 1
+while$ -- 21
+width$ -- 9
+write$ -- 86
+(There was 1 warning)
