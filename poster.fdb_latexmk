@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex poster"] 1778047997.91099 "poster.aux" "poster.bbl" "poster" 1778048368.35454 0
+["bibtex poster"] 1778047997.91099 "poster.aux" "poster.bbl" "poster" 1778049298.44545 0
   "./poster.bib" 1778047994.51791 12780 423076e301512fdaa1b11e9c628bd01d ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "poster.aux" 1778048367.89364 1226 b310be8b93197ef788887b28977a9f9e "lualatex"
+  "poster.aux" 1778049297.98933 1226 b310be8b93197ef788887b28977a9f9e "lualatex"
   (generated)
   "poster.bbl"
   "poster.blg"
   (rewritten before read)
-["lualatex"] 1778048365.51381 "/home/emmdzzz/CNF2026/poster.tex" "poster.pdf" "poster" 1778048368.35471 0
+["lualatex"] 1778049295.56621 "/home/emmdzzz/CNF2026/poster.tex" "poster.pdf" "poster" 1778049298.44559 0
   "/home/emmdzzz/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lato-bold.luc" 1778035921.92358 1525262 4639a8e784131b4198c23da0564bfd16 ""
   "/home/emmdzzz/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lato-bolditalic.luc" 1778035920.76059 1554217 fb1844d4df3f396b6b33bf8f4482ef94 ""
   "/home/emmdzzz/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lato-italic.luc" 1778035923.21357 1580286 8eabb9bf11a609d0e0e228dc2e471a12 ""
@@ -24,7 +24,7 @@
   "/home/emmdzzz/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/raleway-regularitalic.luc" 1778035918.2586 356445 12c7fd5cdd89f32613810b19137c862e ""
   "/home/emmdzzz/.texlive2025/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1778035926.38992 4561 12b28d23d2ea087e35a84482bb242dab ""
   "/home/emmdzzz/.texlive2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1778035916.25462 387088 aafedc0204881686aca0f4e1c898a25e ""
-  "/home/emmdzzz/CNF2026/poster.tex" 1778048365.30924 6845 948a93fbbcfca56fc76639a318ff02b1 ""
+  "/home/emmdzzz/CNF2026/poster.tex" 1778049295.36799 6848 df1a77738c3f9c9687ce9e417f2293a0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/impallari/raleway/Raleway-Bold.otf" 1744228897 125056 8ff25e8942449e0a0879f5a1d86c41f6 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/impallari/raleway/Raleway-Regular.otf" 1744228897 116760 df957c0c84b8a01d4a87518a749cb6e4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -385,11 +385,11 @@
   "fcfm-w.png" 1778035879.48491 3723 e0a85d1e5ddc1fdd81de074404931754 ""
   "images/QR.png" 1778035879.48491 58289 3ee6c4f8dae64a7405b9ae1ddfea8389 ""
   "images/figure3.tex" 1778035879.48613 159 7f9930382826035aa4d02b650a3f7146 ""
-  "poster.aux" 1778048367.89364 1226 b310be8b93197ef788887b28977a9f9e "lualatex"
+  "poster.aux" 1778049297.98933 1226 b310be8b93197ef788887b28977a9f9e "lualatex"
   "poster.bbl" 1778047998.04156 2032 905d1c708aa300c08262d1be6a37b90a "bibtex poster"
-  "poster.nav" 1778048367.89597 307 9e520c26371a1250ff9fc1fe87f9c655 "lualatex"
-  "poster.out" 1778048367.01005 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
-  "poster.tex" 1778048365.30924 6845 948a93fbbcfca56fc76639a318ff02b1 ""
+  "poster.nav" 1778049297.99102 307 9e520c26371a1250ff9fc1fe87f9c655 "lualatex"
+  "poster.out" 1778049297.11862 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "poster.tex" 1778049295.36799 6848 df1a77738c3f9c9687ce9e417f2293a0 ""
   (generated)
   "poster.aux"
   "poster.log"
